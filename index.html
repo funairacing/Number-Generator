@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>NumberPlateGenerator beta</title>
+	<meta name="description" content="Number Plate Generator for Off-Road Bike" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="NumberPlateGenerator" />
+	<meta name="twitter:description" content="Number Plate Generator for Off-Road Bike" />
+	<meta name="twitter:image" content="image.png" />
+	<meta name="twitter:url" content="" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<h1>Number Plate Generator β</h1>
+	<div>
+		<canvas id="canvas" width="400px" height="150px"></canvas>
+	</div>
+	<div>
+		<input type="text" id="textbox" size="50" value="" spellcheck="false" oninput="redraw();">
+		<button type="button" onclick="saveImage();">画像を保存する</button>
+	</div>
+	<p>
+		オフロードバイクのゼッケン用のナンバーを作成するツールです。<br>
+    コンビニでA4に印刷しておよそ縦90~100mmになるようにしています。(ライト付きED車のフロントマスク上に収まるサイズ)<br>
+    必要な場合はご自身で拡大・縮小をお願いします。3桁以上だとはみ出ます。<br>
+    フォントは現在フリーのフォントを使っています。今後気が向いたら増やします。
+	</p>
+
+	<div>
+		powered by <a href="http://funairacing.com">FUNAI RACING</a>
+	</div>
+	<span class="font-load">&nbsp;</span>
+  <div>
+    <canvas hidden id="canvas_save" width="847px" height="595px"></canvas>
+  </div>
+
+</body>
+
+</html>

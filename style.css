@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'electricboots';
+	src: url('ELECTRICBOOTS.ttf') format('opentype');
+}
+
+div {
+	display: block;
+}
+
+.font-load{
+    font-family: 'electricboots';
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
