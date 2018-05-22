@@ -12,13 +12,13 @@ function saveImage() {
   canvas = document.getElementById("canvas_save");
   textbox = document.getElementById("textbox");
   ctx = canvas_save.getContext('2d');
-  ctx.font = '510px electricboots';
+  ctx.font = '1760px electricboots';
   ctx.lineJoin = 'round';
   ctx.setTransform(1,0,0,1,0,0);
   ctx.clearRect(0, 0, canvas_save.width, canvas_save.height);
-  ctx.setTransform(1,0,-0.18,1,0,0);
-  var posx = 115;
-  var posy = 440;
+  ctx.setTransform(1,0,-0.1,1,0,0);
+  var posx = 320;
+  var posy = 1500;
   var text = textbox.value;
   ctx.strokeStyle = "#000";
   ctx.lineWidth =0;
